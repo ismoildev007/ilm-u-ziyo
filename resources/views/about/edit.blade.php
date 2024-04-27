@@ -30,9 +30,9 @@
                         <p class="help-block text-danger"></p>
                     </div>
                     <div class="control-group">
-                        <input type="text" id="if" class="form-control p-2" name="description" placeholder="Description" value="{{ $abouts->description }}" />
-                        @error('description')
-                        <label for="if" class="text-danger">Description</label>
+                        <input type="text" id="if" class="form-control p-2" name="description_uz" placeholder="description_uz" value="{{ $abouts->description_uz }}" />
+                        @error('description_uz')
+                        <label for="if" class="text-danger">description_uz</label>
                         @enderror
                         <p class="help-block text-danger"></p>
                     </div>
@@ -72,9 +72,9 @@
                         <p class="help-block text-danger"></p>
                     </div>
                     <div class="control-group">
-                        <input type="text" id="if" class="form-control p-2" name="short_content" placeholder="short content" value="{{ $abouts->short_content }}" />
-                        @error('short_content')
-                        <label for="if" class="text-danger">Short Content</label>
+                        <input type="text" id="if" class="form-control p-2" name="short_content_uz" placeholder="short_content_uz" value="{{ $abouts->short_content_uz }}" />
+                        @error('short_content_uz')
+                        <label for="if" class="text-danger">short_content_uz</label>
                         @enderror
                         <p class="help-block text-danger"></p>
                     </div>

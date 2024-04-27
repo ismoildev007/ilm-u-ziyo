@@ -207,7 +207,6 @@ $lang = \Illuminate\Support\Facades\App::getLocale()
 
             </div>
         </section><!-- End Departments Section -->
-
         <!-- ======= Doctors Section ======= -->
             <section id="team" class="doctors">
                 <div class="container">
