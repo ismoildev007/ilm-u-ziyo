@@ -51,7 +51,7 @@
                         <p class="help-block text-danger"></p>
                     </div>
                     <div class="control-group">
-                        <input type="text" id="if" class="form-control p-2" name="branches" placeholder="Filiallarni kriting" value="{{ $abouts->branches }}" />
+                        <input type="text" id="if" class="form-control p-2" name="branches" placeholder="Filiallarni kriting" value="{{ $abouts->branches_uz }}" />
                         @error('branches')
                         <label for="if" class="text-danger">Filiallarni kirinting</label>
                         @enderror

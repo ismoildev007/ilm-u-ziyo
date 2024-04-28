@@ -14,7 +14,7 @@ class StudentPhotoController extends Controller
     public function index()
     {
         $student_photo = StudentPhoto::all();
-        return view('photo.index')->with('student_photos', $student_photo);
+        return view('photo.index')->with('photos', $student_photo);
     }
 
     /**
@@ -23,7 +23,7 @@ class StudentPhotoController extends Controller
     public function create()
     {
         return view('photo.create')->with([
-            'student_photos' => StudentPhoto::all(),
+            'photos' => StudentPhoto::all(),
         ]);
     }
 
@@ -50,9 +50,9 @@ class StudentPhotoController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(StudentPhoto $student_photos)
+    public function destroy(StudentPhoto $photo)
     {
-        $student_photos->delete();
+        $photo->delete();
         return redirect()->route('photo.index');
     }
 }

@@ -88,7 +88,7 @@ $lang = \Illuminate\Support\Facades\App::getLocale()
 
         <a href="#contact" class="appointment-btn scrollto">@lang('words.con')</a>
         <div class="dropdown">
-            <button class="btn btn dropdown-toggle mx-1" style="border-radius: 50px;border: 1px solid #0b5ed7;" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+            <button class="btn btn dropdown-toggle mx-1" style="border-radius: 50px;border: 1px solid #145fcb;" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
                 @if($lang == 'en') English @endif
                 @if($lang == 'ru') Русский @endif
                 @if($lang == 'uz') Uzbek @endif

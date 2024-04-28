@@ -227,17 +227,6 @@ $lang = \Illuminate\Support\Facades\App::getLocale()
                                 </div>
                             </div>
                         @endforeach
-
-                        <div class="col-lg-6 mt-4 mt-lg-0">
-                            <div class="member d-flex align-items-start">
-                                <div class="pic"><img src="assets/img/doctors/doctors-2.jpg" class="img-fluid" alt=""></div>
-                                <div class="member-info">
-                                    <h4>Sarah Jhonson</h4>
-                                    <span>Anesthesiologist</span>
-                                    <p>Aut maiores voluptates amet et quis praesentium qui senda para</p>
-                                </div>
-                            </div>
-                        </div>
                     </div>
 
                 </div>

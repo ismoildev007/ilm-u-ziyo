@@ -15,7 +15,7 @@
                             </tr>
                             </thead>
                             <tbody>
-                            @foreach($student_photos as $student_photo)
+                            @foreach($photos as $student_photo)
                                 <tr>
                                     <td>{{ $student_photo->id }}</td>
                                     <td><img src="{{ asset('storage/' . $student_photo->student_photos) }}" alt="" style="width: 100px;height: 100px;"></td>
