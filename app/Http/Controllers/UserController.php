@@ -19,14 +19,16 @@ class UserController extends Controller
         return view('auth.edit', compact('profile'));
     }
 
-    public function update(StoreRequest $request, User $user)
+    public function update(StoreRequest $request, User $profile)
     {
-        $user->update([
-            'name' => $request->name,
+        $profile->update([
+           'name' => $request->name,
             'password' => Hash::make($request->password),
         ]);
 
-        return redirect()->route('profile.index', ['profile' => $user->id]);
+        return redirect()->route('profile.index', ['profile' => $profile->id]);
+
     }
+
 
 }

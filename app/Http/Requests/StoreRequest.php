@@ -21,11 +21,12 @@ class StoreRequest extends FormRequest
      */
     public function rules(): array
     {
+        $userId = auth()->id();
         return [
-            'name',
+            'name' => 'required|string|max:255',
+            'email' => 'string|email|max:255|unique:users,email,' . $userId,
+            'password' => 'sometimes|string|min:6',
             'link',
-            'email',
-            'password',
             'partner_name',
             'title_uz',
             'title_ru',

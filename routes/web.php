@@ -86,11 +86,8 @@ Route::middleware(['checkRole:admin', 'auth'])->group(function () {
 
 Route::get('/', [MainController::class, 'main'])->name('main');
 Route::get('/{lang}', function ($lang){
-//    return $lang;
 
     session(['lang' => $lang]);
 
     return back();
 });
-//Route::get('/ru', [MainController::class, 'ru'])->name('ru');
-//Route::get('/en', [MainController::class, 'en'])->name('en');
