@@ -26,12 +26,13 @@ class EducationalController extends Controller
         return view('educational.create')->with([
             'educations' => Educational::all(),
         ]);
+
     }
 
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StoreRequest $request, Educational $educational)
+    public function store(Request $request, Educational $educational)
     {
         if ($request->hasFile('photo'))
         {
@@ -53,8 +54,6 @@ class EducationalController extends Controller
             'photo' => $path ?? null
         ]);
 
-        echo $educational;
-        die();
 
         return redirect()->route('educational.index');
     }

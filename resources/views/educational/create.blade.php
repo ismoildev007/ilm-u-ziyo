@@ -6,6 +6,7 @@
                 <div id="success"></div>
 
                 <form action="{{ route('educational.store') }}" method="post" enctype="multipart/form-data">
+                    @php echo 'sssss'  @endphp
                     @csrf
                     <div class="control-group">
                         <input type="text" id="if" class="form-control p-2" name="description_uz"

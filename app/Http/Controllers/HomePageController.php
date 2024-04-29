@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\StoreRequest;
 use App\Models\Home;
+use http\Env\Request;
 use Illuminate\Support\Facades\Storage;
 
 class HomePageController extends Controller
@@ -30,7 +31,7 @@ class HomePageController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StoreRequest $request)
+    public function store(Request $request)
     {
         if ($request->hasFile('photo'))
         {
