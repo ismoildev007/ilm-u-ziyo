@@ -18,7 +18,7 @@
                             </tr>
                             </thead>
                             <tbody>
-                            @foreach($educationals as $educational)
+                            @foreach($educations as $educational)
                                 <tr>
                                     <td>{{ $educational->id }}</td>
                                     <td>{{ $educational->title_uz }}</td>

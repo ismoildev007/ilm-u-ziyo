@@ -58,7 +58,7 @@
                     <div class="control-group">
                         <input type="text" id="if" class="form-control p-2" name="short_content_uz"
                                placeholder="yo'nalish haqida Qisqacha. uzbek" value="{{ old('short_content_uz') }}"/>
-                        @error('short_content')
+                        @error('short_content_uz')
                         <label for="if" class="text-danger">Short content</label>
                         @enderror
                         <p class="help-block text-danger"></p>
@@ -73,7 +73,7 @@
                     </div>
                     <div class="control-group">
                         <input type="text" id="if" class="form-control p-2" name="short_content_en"
-                               placeholder="yo'nalish haqida Qisqacha.english" value="{{ old('short_content_en') }}"/>
+                               placeholder="yo'nalish haqida Qisqacha english" value="{{ old('short_content_en') }}"/>
                         @error('short_content_en')
                         <label for="if" class="text-danger">short_content_en</label>
                         @enderror

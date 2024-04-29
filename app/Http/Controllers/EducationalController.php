@@ -15,7 +15,7 @@ class EducationalController extends Controller
     public function index()
     {
         $educational = Educational::all();
-        return view('educational.index')->with('educationals', $educational);
+        return view('educational.index')->with('educations', $educational);
     }
 
     /**
@@ -24,14 +24,14 @@ class EducationalController extends Controller
     public function create()
     {
         return view('educational.create')->with([
-            'educationals' => Educational::all(),
+            'educations' => Educational::all(),
         ]);
     }
 
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StoreRequest $request)
+    public function store(StoreRequest $request, Educational $educational)
     {
         if ($request->hasFile('photo'))
         {
@@ -40,7 +40,7 @@ class EducationalController extends Controller
 
         }
 
-        Educational::create([
+        $educational::create([
             'description_uz' => $request->description_uz,
             'description_ru' => $request->description_ru,
             'description_en' => $request->description_en,
@@ -53,6 +53,9 @@ class EducationalController extends Controller
             'photo' => $path ?? null
         ]);
 
+        echo $educational;
+        die();
+
         return redirect()->route('educational.index');
     }
 
@@ -62,7 +65,7 @@ class EducationalController extends Controller
     public function show(Educational $educational)
     {
         return view('educational.show')->with([
-            'educationals' => $educational,
+            'educations' => $educational,
         ]);
     }
 
@@ -71,7 +74,7 @@ class EducationalController extends Controller
      */
     public function edit(Educational $educational)
     {
-        return view('educational.edit')->with(['educationals' => $educational]);
+        return view('educational.edit')->with(['educations' => $educational]);
     }
 
 
@@ -101,7 +104,7 @@ class EducationalController extends Controller
             'photo' => $path ?? $educational->photo,
         ]);
 
-        return redirect()->route('educational.index', ['educationals' => $educational->id]);
+        return redirect()->route('educational.index', ['educations' => $educational->id]);
     }
 
     /**

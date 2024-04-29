@@ -25,22 +25,22 @@
                             </thead>
                             <tbody>
                             <tr>
-                                <td>{{ $educationals->id }}</td>
-                                <td>{{ $educationals->description_uz }}</td>
-                                <td>{{ $educationals->description_ru }}</td>
-                                <td>{{ $educationals->description_en }}</td>
-                                <td>{{ $educationals->title_uz }}</td>
-                                <td>{{ $educationals->title_ru }}</td>
-                                <td>{{ $educationals->title_en }}</td>
-                                <td>{{ $educationals->short_content_uz }}</td>
-                                <td>{{ $educationals->short_content_ru }}</td>
-                                <td>{{ $educationals->short_content_en }}</td>
-                                <td><img src="{{ asset('storage/' . $educationals->photo) }}" alt="" style="width: 100px;"></td>
+                                <td>{{ $educations->id }}</td>
+                                <td>{{ $educations->description_uz }}</td>
+                                <td>{{ $educations->description_ru }}</td>
+                                <td>{{ $educations->description_en }}</td>
+                                <td>{{ $educations->title_uz }}</td>
+                                <td>{{ $educations->title_ru }}</td>
+                                <td>{{ $educations->title_en }}</td>
+                                <td>{{ $educations->short_content_uz }}</td>
+                                <td>{{ $educations->short_content_ru }}</td>
+                                <td>{{ $educations->short_content_en }}</td>
+                                <td><img src="{{ asset('storage/' . $educations->photo) }}" alt="" style="width: 100px;"></td>
                                 <td>
                                     <div class="d-flex tools">
-                                        <a href="{{ route('educational.edit', ['educational' => $educationals->id]) }}" class="mr-1"><i class="fa fa-edit"></i></a>
+                                        <a href="{{ route('educational.edit', ['educational' => $educations->id]) }}" class="mr-1"><i class="fa fa-edit"></i></a>
                                         @auth
-                                            <form action="{{ route('educational.destroy', ['educational'=> $educationals->id]) }}" method="post" onsubmit="return confirm('Ochirishga ruxsat berasizmi')">
+                                            <form action="{{ route('educational.destroy', ['educational'=> $educations->id]) }}" method="post" onsubmit="return confirm('Ochirishga ruxsat berasizmi')">
                                                 @csrf
                                                 @method('DELETE')
                                                 <button type="submit" class="btn text-danger" style="margin-top: -6px;"><i class="fa fa-trash"></i></button>
