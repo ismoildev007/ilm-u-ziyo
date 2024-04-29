@@ -24,6 +24,7 @@ class PartnersController extends Controller
     public function create()
     {
         return view('partners.create')->with([
+            'partners' => Partners::all(),
             'posts' => Post::all(),
         ]);
     }
