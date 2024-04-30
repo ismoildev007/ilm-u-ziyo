@@ -143,7 +143,7 @@
                                 <tr>
                                     <td>{{ $document->id }}</td>
                                     <td><img src="{{ asset('storage/' . $document->licence) }}" alt="" style="width: 100px;height: 100px;"></td>
-                                    <td><img src="{{ asset('storage/' . $document->pssport) }}" alt="" style="width: 100px;height: 100px;"></td>
+                                    <td><img src="{{ asset('storage/' . $document->passport) }}" alt="" style="width: 100px;height: 100px;"></td>
                                     <td>
                                         <div class="d-flex tools">
                                             <a href="{{ route('document.edit', ['document' => $document->id]) }}" class="mr-1"><i class="fa fa-edit"></i></a>
@@ -186,7 +186,7 @@
                                 <th scope="col">Description_uz</th>
                                 <th scope="col">short_content_uz</th>
                                 <th scope="col">photo</th>
-                                <th scope="col">Barchasi</th>
+                                <th scope="col">Operatsiyalar</th>
                             </tr>
                             </thead>
                             <tbody>
@@ -245,7 +245,7 @@
                                 <th scope="col">O'qituvchilar</th>
                                 <th scope="col">Kafedralar</th>
                                 <th scope="col">Amaliyot bazalari</th>
-                                <th scope="col">Barchasi</th>
+                                <th scope="col">Operatsiyalar</th>
                             </tr>
                             </thead>
                             <tbody>
@@ -349,7 +349,7 @@
                                 <th scope="col">facebook</th>
                                 <th scope="col">youtube</th>
                                 <th scope="col">linkedin</th>
-                                <th scope="col">Barchasi</th>
+                                <th scope="col">Operatsiyalar</th>
                             </tr>
                             </thead>
                             <tbody>

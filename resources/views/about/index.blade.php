@@ -14,7 +14,7 @@
                                 <th scope="col">Description_uz</th>
                                 <th scope="col">Branches_uz</th>
                                 <th scope="col">short_content_uz</th>
-                                <th scope="col">Barchasi</th>
+                                <th scope="col">Operatsiyalar</th>
                             </tr>
                             </thead>
                             <tbody>

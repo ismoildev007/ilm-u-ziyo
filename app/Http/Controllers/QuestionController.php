@@ -67,7 +67,7 @@ class QuestionController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(StoreRequest $request, Question $question)
+    public function update(Request $request, Question $question)
     {
 
         $question->update([

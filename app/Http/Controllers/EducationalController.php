@@ -77,7 +77,7 @@ class EducationalController extends Controller
     }
 
 
-    public function update(StoreRequest $request, Educational $educational)
+    public function update(Request $request, Educational $educational)
     {
         if ($request->hasFile('photo'))
         {

@@ -12,7 +12,7 @@
                                 <th scope="col">Id</th>
                                 <th scope="col">Litsenziya</th>
                                 <th scope="col">Guvohnoma</th>
-                                <th scope="col">Barchasi</th>
+                                <th scope="col">Operatsiyalar</th>
                             </tr>
                             </thead>
                             <tbody>

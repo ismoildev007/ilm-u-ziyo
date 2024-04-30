@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\StoreRequest;
 use App\Models\User;
+use http\Env\Request;
 use Illuminate\Support\Facades\Hash;
 
 class UserController extends Controller
@@ -19,7 +20,7 @@ class UserController extends Controller
         return view('auth.edit', compact('profile'));
     }
 
-    public function update(StoreRequest $request, User $profile)
+    public function update(Request $request, User $profile)
     {
         $profile->update([
            'name' => $request->name,

@@ -14,7 +14,7 @@
                                 <th scope="col">O'qituvchilar</th>
                                 <th scope="col">Kafedralar</th>
                                 <th scope="col">Amaliyot bazalari</th>
-                                <th scope="col">Barchasi</th>
+                                <th scope="col">Operatsiyalar</th>
                             </tr>
                             </thead>
                             <tbody>

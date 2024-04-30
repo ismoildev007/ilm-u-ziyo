@@ -296,14 +296,19 @@ $lang = \Illuminate\Support\Facades\App::getLocale()
 
                 <div class="faq-list">
                     <ul>
-                        @foreach($questions as $question)
+                        @foreach($questions as $key => $question)
                             <li data-aos="fade-up">
-                                <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">{{ $question['title_'. $lang] }}<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                                <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
+                                <i class="bx bx-help-circle icon-help"></i>
+                                <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-{{ $key }}">{{ $question['title_'. $lang] }}
+                                    <i class="bx bx-chevron-down icon-show"></i>
+                                    <i class="bx bx-chevron-up icon-close"></i>
+                                </a>
+                                <div id="faq-list-{{ $key }}" class="collapse show" data-bs-parent=".faq-list">
                                     <p>{{ $question['description_'. $lang] }}</p>
                                 </div>
                             </li>
                         @endforeach
+
 
                     </ul>
                 </div>

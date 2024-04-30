@@ -70,7 +70,7 @@ class AboutController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(StoreRequest $request, About $about)
+    public function update(Request $request, About $about)
     {
 
         $about->update([

@@ -74,7 +74,7 @@ class HomePageController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(StoreRequest $request, Home $home)
+    public function update(Request $request, Home $home)
     {
         if ($request->hasFile('photo'))
         {

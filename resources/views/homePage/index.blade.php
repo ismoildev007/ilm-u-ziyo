@@ -13,7 +13,7 @@
                                 <th scope="col">title_uz</th>
                                 <th scope="col">description_uz</th>
                                 <th scope="col">photo</th>
-                                <th scope="col">Barchasi</th>
+                                <th scope="col">Operatsiyalar</th>
                             </tr>
                             </thead>
                             <tbody>

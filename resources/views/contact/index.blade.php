@@ -17,7 +17,7 @@
                                 <th scope="col">facebook</th>
                                 <th scope="col">youtube</th>
                                 <th scope="col">linkedin</th>
-                                <th scope="col">Barchasi</th>
+                                <th scope="col">Operatsiyalar</th>
                             </tr>
                             </thead>
                             <tbody>

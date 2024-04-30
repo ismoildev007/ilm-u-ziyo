@@ -55,7 +55,7 @@ class PartnersController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(StoreRequest $request, Partners $partner)
+    public function update(Request $request, Partners $partner)
     {
 
         $partner->update([
