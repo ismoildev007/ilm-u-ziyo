@@ -31,7 +31,7 @@ class HomePageController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request, Home $home)
+    public function store(Request $request)
     {
 
         if ($request->hasFile('photo'))
@@ -41,7 +41,7 @@ class HomePageController extends Controller
 
         }
 
-        $home->create([
+        Home::create([
             'title_uz' => $request->title_uz,
             'title_ru' => $request->title_ru,
             'title_en' => $request->title_en,

@@ -52,7 +52,7 @@ class VideoController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(StoreRequest $request, Video $video)
+    public function update(Request $request, Video $video)
     {
 
         $video->update([
