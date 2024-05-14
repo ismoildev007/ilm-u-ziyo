@@ -31,7 +31,7 @@ class HomePageController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(StoreRequest $request)
     {
         if ($request->hasFile('photo'))
         {
@@ -74,7 +74,7 @@ class HomePageController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Home $home)
+    public function update(StoreRequest $request, Home $home)
     {
         if ($request->hasFile('photo'))
         {
