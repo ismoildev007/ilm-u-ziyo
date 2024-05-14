@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\StoreRequest;
 use App\Models\Home;
-use http\Env\Request;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 
 class HomePageController extends Controller
@@ -31,8 +31,9 @@ class HomePageController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StoreRequest $request)
+    public function store(Request $request, Home $home)
     {
+
         if ($request->hasFile('photo'))
         {
             $name = $request->file('photo')->getClientOriginalName();
@@ -40,7 +41,7 @@ class HomePageController extends Controller
 
         }
 
-        Home::create([
+        $home->create([
             'title_uz' => $request->title_uz,
             'title_ru' => $request->title_ru,
             'title_en' => $request->title_en,
@@ -74,7 +75,7 @@ class HomePageController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(StoreRequest $request, Home $home)
+    public function update(Request $request, Home $home)
     {
         if ($request->hasFile('photo'))
         {
