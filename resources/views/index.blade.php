@@ -8,7 +8,7 @@ $lang = \Illuminate\Support\Facades\App::getLocale()
 <x-layouts.main>
     <main id="main">
         @foreach($homes as $home)
-            <section id="hero" class="d-flex align-items-center">
+            <section style="background: url('{{ asset('storage/' . $home->photo ) }}');background-size: cover; max-width: 100%;" id="hero" class="d-flex align-items-center">
                 <div class="container">
                     <h1>{{ $home['title_'. $lang] }}</h1>
                     <h2>{{ $home['description_'. $lang] }}</h2>

@@ -12,6 +12,7 @@ $lang = \Illuminate\Support\Facades\App::getLocale()
     <title>Ilm-u ziyo tibbiyot kolleji</title>
     <meta content="Ilm-u ziyo tibbiyot kolleji web-sayti. Bizning hamshiralik ishi va boshqa qo'shimcha yo'nalishlarimiz haqida ma'lumot oling." name="description">
     <meta content="Ilm-u ziyo, tibbiyot kolleji, hamshiralik, psixologiya, logopediya, bolalar massaji" name="keywords">
+    <meta name="google-site-verification" content="XIZWYgkDY3pS-bghW7DOYwnRQ6BFvZqYLcDYoEdVRSY" />
 
     <!-- Favicons -->
     <link href="assets/img/kollej.png" rel="icon">
@@ -19,6 +20,7 @@ $lang = \Illuminate\Support\Facades\App::getLocale()
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
 
     <!-- Vendor CSS Files -->
     <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
